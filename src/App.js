@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
+import './styles.css';
+
+import Header from './components/Header';
+import Main from './pages/main';
+
+const App = () => (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Main />
     </div>
-  );
-}
+);
+
+// Outro jeito de fazer a função
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Hello Rocketseat!</h1>
+//     </div>
+//   );
+// }
 
 export default App;
